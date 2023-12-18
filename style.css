@@ -15,6 +15,13 @@ body {
   margin: 30px auto;
 }
 
+.logout {
+  display: flex;
+  justify-content: flex-end;
+  color: #ac485a;
+  font-size: .8rem;
+}
+
 img {
   width: 150px;
   margin: 0 auto;
@@ -32,7 +39,7 @@ input {
   margin: 10px 0;
 }
 
-button {
+.button {
   color: #fdfdfd;
   background-color: #ac485a;
   border: 0;
@@ -43,7 +50,7 @@ button {
   font-family: "Rubik", sans-serif;
 }
 
-button:hover {
+.button:hover {
   background-color: #432000;
   cursor: pointer;
 }

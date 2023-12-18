@@ -4,6 +4,7 @@ import  apiUrl  from "./config.js";
 const inputFieldEl = document.getElementById("input-field");
 const addButtonEl = document.getElementById("add-button");
 const shoppingListEl = document.getElementById("shopping-list");
+const logoutEl = document.getElementById("logout")
 
 window.onload = function () {
   const user = JSON.parse(localStorage.getItem("user"));
@@ -14,6 +15,15 @@ window.onload = function () {
     window.location.href = "./index.html";
   }
 };
+
+logoutEl.addEventListener('click', logout);
+
+function logout() {
+  localStorage.clear();
+  location.reload();
+}
+
+
 
 function getUser() {
   return JSON.parse(localStorage.getItem("user"));
